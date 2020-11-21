@@ -1,0 +1,60 @@
+/*
+ * Style rules specifically for the join page
+ */
+
+div.joinpane {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/joinbox_border.png");
+    height: min(80vh, 80vw);
+    width:  min(80vh, 80vw);
+    display: inline-block;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: min(8vh, 8vw);
+    text-align: center;
+}
+
+#gamecode {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(50vh, 50vw);
+    border: 1px solid black;
+    background-color: none;
+    text-align: center;
+    font-size: min(10vh, 10vw);
+}
+
+div.button {
+    position: absolute;
+    bottom: min(10vh, 10vw);
+    width: min(25vh, 25vw);
+    height: min(15vh, 15vw);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.button#gobutton {
+    right: min(10vh, 10vw);
+    background-image: url("../img/go_norm.png");
+}
+div.button#gobutton:hover {
+    background-image: url("../img/go_hov.png");
+}
+div.button#gobutton[locked="true"] {
+    background-image: url("../img/go_no.png");
+}
+
+div.button#backbutton {
+    left: min(10vh, 10vw);
+    background-image: url("../img/back_norm.png");
+}
+div.button#backbutton:hover {
+    background-image: url("../img/back_hov.png");
+}

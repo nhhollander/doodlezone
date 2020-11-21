@@ -1,0 +1,28 @@
+/*
+ * Style rules specifically for the home page of the website
+ */
+
+div.large_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+    width: 25vw;
+}
+div.joinbutton {
+    left: 20%;
+    background-image: url("../img/join_norm.png");
+}
+div.joinbutton:hover {
+    background-image: url("../img/join_hov.png");
+}
+div.hostbutton {
+    right: 20%;
+    background-image: url("../img/host_norm.png");
+}
+div.hostbutton:hover {
+    background-image: url("../img/host_hov.png");
+}

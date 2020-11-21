@@ -1,0 +1,44 @@
+/*
+ * This is the style sheet.
+ *
+ * It's the reason my homework is so attractive.
+ */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: url("../img/cursors/default_s.png"), auto;
+}
+
+a.logolink {
+    text-decoration: none;
+}
+a.logolink>img {
+    height: 4cm;
+}
+
+div.main {
+    position: fixed;
+    left: 0; top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+input[type="text"] {
+    cursor: url("../img/cursors/text_s.png") 25 64, text;
+}
+
+div#homebutton {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/logo.png");
+    position: fixed;
+    left: 2vh;
+    top: 0;
+    height: 25vh;
+    width: 30vh;
+    z-index: 100000;
+}
+div#homebutton:hover {
+    background-image: url("../img/logo_hov.png");
+}
