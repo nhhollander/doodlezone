@@ -7,6 +7,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     cursor: url("../img/cursors/default_s.png"), auto;
+    min-height: 100vh;
 }
 
 a.logolink {
@@ -41,4 +42,17 @@ div#homebutton {
 }
 div#homebutton:hover {
     background-image: url("../img/logo_hov.png");
+}
+
+div.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/loading.gif");
 }
