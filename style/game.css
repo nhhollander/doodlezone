@@ -1,0 +1,41 @@
+div.drawframe {
+    width: min(90vh, 90vw);
+    height: min(90vh, 90vw);
+    position: fixed;
+    right: min(5vw, 5vh);
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.drawmask {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/drawframe_masked.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+[ccolor="red"] .brushcursor {
+    cursor: url("../img/cursors/brush_red.png") 5 110, pointer;
+}
+[ccolor="red"] .brushcursor {
+    cursor: url("../img/cursors/brush_red.png") 5 110, pointer;
+}
+
+div.paintframe {
+    position: fixed;
+    right: min(92vh, 92vw);
+    width: min(10vh, 10vw);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.paintframe>img {
+    width: min(8vh, 8vw);
+}
+
+canvas#canvas {
+    width: 100%;
+    height: 100%;
+}
